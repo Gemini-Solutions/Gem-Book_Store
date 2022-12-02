@@ -4,6 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.gemini.store.entities.Publisher;
 
+import java.util.Optional;
+
 public interface PublisherRepo extends JpaRepository<Publisher, Integer> {
-	Publisher findByPublisherName(String publisherName);
+	Optional<Publisher> findByPublisherName(String publisherName);
 }

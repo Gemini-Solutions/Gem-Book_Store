@@ -12,16 +12,17 @@ import javax.persistence.OneToMany;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 public class Publisher {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer publisherId;
-	private String publisherName;
-	private String publisherNationality;
-	@OneToMany(mappedBy = "publisherId",cascade = CascadeType.ALL)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer publisherId;
+    private String publisherName;
+    private String publisherNationality;
+    @OneToMany(mappedBy = "publisherId")
     private List<Book> books;
 }

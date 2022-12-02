@@ -4,8 +4,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.gemini.store.entities.Author;
 
+import java.util.Optional;
+
 public interface AuthorRepo extends JpaRepository<Author, Integer> {
-	
-	Author findByAuthorName(String authorName);
+
+    Optional<Author> findByAuthorName(String authorName);
 
 }

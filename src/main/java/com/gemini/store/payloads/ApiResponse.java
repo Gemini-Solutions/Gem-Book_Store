@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ApiResponse {
 
-	private String message;
-	private String statusCode;
-	private String status;
+    private String message;
+    private String statusCode;
+    private String status;
 }

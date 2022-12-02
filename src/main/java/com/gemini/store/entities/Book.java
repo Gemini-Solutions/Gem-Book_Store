@@ -18,15 +18,15 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer bookISIN ;
-	private String booktitle;
-	private String publishdate;
-	private String edition;
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Author authorId;
-	@ManyToOne(cascade = CascadeType.ALL)
-	private Publisher publisherId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer bookISIN;
+    private String booktitle;
+    private String publishdate;
+    private String edition;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Author authorId;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Publisher publisherId;
 
 }

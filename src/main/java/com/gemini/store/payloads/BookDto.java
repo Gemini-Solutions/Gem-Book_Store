@@ -10,12 +10,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookDto {
-	private String booktitle;
-	private String publishdate;
-	private String edition;
-	private String publisherName;
-	private String publisherNationality;
-	private String authorName;
-	private String authorNationality;
+    private Integer bookId;
+    private String booktitle;
+    private String publishdate;
+    private String edition;
+    private String publisherName;
+    private String publisherNationality;
+    private String authorName;
+    private String authorNationality;
 
 }
